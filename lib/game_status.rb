@@ -50,7 +50,7 @@ def winner(board)
   win_index1 = win[0]
   win_index2 = win[1]
   win_index3 = win[2]
-  if !won?(board)
+  if won?(board) == false
     nil
   elsif board[win_index1] == "X"
     return "X"
