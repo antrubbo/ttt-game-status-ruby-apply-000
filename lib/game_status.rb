@@ -46,7 +46,7 @@ def over?(board)
 end
 
 def winner(board)
-  win = won?(board) #winning numbers array
+  win = won?(board)
   win_index1 = win[0]
   win_index2 = win[1]
   win_index3 = win[2]
@@ -55,4 +55,5 @@ def winner(board)
   else
     return "O"
   end
+  nil
 end
