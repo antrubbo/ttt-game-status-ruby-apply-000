@@ -55,7 +55,7 @@ def winner(board)
   else board[win_index1] == "O"
     return "O"
   end
-  if win_index1 != win_index2
+  if board[win_index1] != board[win_index2]
     false
   end
 end
