@@ -48,7 +48,5 @@ end
 def winner(board)
   if win = won?(board)
     board[win[0]]
-    # win_index1 = win[0]
-    # board[win_index1] == "X"
   end
 end
