@@ -52,9 +52,10 @@ def winner(board)
   win_index3 = win[2]
   if board[win_index1] == "X"
     return "X"
-  elsif board[win_index1] == "O"
-    return "O"
   else
+    return "O"
+  end
+  if win = false
     return nil
   end
 end
