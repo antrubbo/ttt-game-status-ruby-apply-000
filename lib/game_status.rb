@@ -47,11 +47,9 @@ end
 
 def winner(board)
   if win = won?(board)
-    win_index1 = win[0]
-    win_index2 = win[1]
-    win_index3 = win[2]
-    if board[win_index1] == "X"
-      return "X"
+    board[win[0]]
+    # win_index1 = win[0]
+    # board[win_index1] == "X"
     else
       return "O"
     end
