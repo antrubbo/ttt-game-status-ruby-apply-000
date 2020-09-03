@@ -46,13 +46,11 @@ def over?(board)
 end
 
 def winner(board)
-  win = won?(board)
+  win = won?(board) #winning numbers array
   win_index1 = win[0]
   win_index2 = win[1]
   win_index3 = win[2]
-  win_combo = WIN_COMBINATIONS.select {|i| i == win}
-  win_combo_1 = [0]
-  if win_combo_1 == "X"
+  if board[win_index1] == "X"
     return "X"
   else
     return "O"
