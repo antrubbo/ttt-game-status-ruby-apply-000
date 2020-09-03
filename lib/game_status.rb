@@ -50,7 +50,5 @@ def winner(board)
     board[win[0]]
     # win_index1 = win[0]
     # board[win_index1] == "X"
-  else
-    return "O"
   end
 end
