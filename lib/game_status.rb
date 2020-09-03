@@ -50,11 +50,11 @@ def winner(board)
   win_index1 = win[0]
   win_index2 = win[1]
   win_index3 = win[2]
-  if over?(board) && board[win_index1] == "X"
+  if won?(board) && board[win_index1] == "X"
     return "X"
-  elsif over?(board) && board[win_index1] == "O"
+  elsif won?(board) && board[win_index1] == "O"
     return "O"
   else
-    nil
+    false
   end
 end
